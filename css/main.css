@@ -1,4 +1,84 @@
 body {
-    color: #424242;
-    font: 14px Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.page {
+    width: 1581px;
+    height: 951px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    border-top: 1px solid #b6b4b6;
+}
+
+.header {
+    height: 148px;
+}
+
+.orange,
+.turquoise,
+.green {
+    width: 141px;
+    height: 14px;
+    float: left;
+}
+
+.orange {
+    background-color: #ff7800;
+    margin-left: 856px;
+}
+
+.turquoise {
+    background-color: #319aa3;
+    margin: 0 3px;
+}
+
+.green {
+    background-color: #1e3436;
+}
+
+.logo {
+    width: 373px;
+    height: 120px;
+    float: left;
+    background-image: url("../images/logo.png");
+    margin-left: 295px;
+    margin-top: -139px;
+}
+
+.aboat,
+.offers,
+.contact {
+    width: 141px;
+    height: 131px;
+    float: left;
+    background-color: #fcfcfc;
+    margin-top: 3px;
+}
+
+.aboat {
+    margin-left: 856px;
+}
+
+.offers {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.contact {
+}
+
+.header a {
+    width: 141px;
+    height: 131px;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #343434;
+}
+
+a:hover {
+    background-color: grey;
 }
