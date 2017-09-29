@@ -1,18 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-}
-
-.page {
-    width: 1581px;
-    height: 951px;
-    margin: 0 auto;
-    background-color: #fcfcfc;
-    border-top: 1px solid #b6b4b6;
+    width: 1920px;
+    position: absolute;
+    background-color: white;
 }
 
 .header {
     height: 148px;
+    padding-top: 1px;
 }
 
 .orange,
@@ -25,7 +21,7 @@ body {
 
 .orange {
     background-color: #ff7800;
-    margin-left: 856px;
+    margin-left: 1018px;
 }
 
 .turquoise {
@@ -42,22 +38,21 @@ body {
     height: 120px;
     float: left;
     background-image: url("../images/logo.png");
-    margin-left: 295px;
-    margin-top: -139px;
+    margin-left:457px;
+    margin-top: -138px;
 }
 
 .aboat,
 .offers,
 .contact {
     width: 141px;
-    height: 131px;
+    height: 130px;
     float: left;
-    background-color: #fcfcfc;
     margin-top: 3px;
 }
 
 .aboat {
-    margin-left: 856px;
+    margin-left: 1018px;
 }
 
 .offers {
@@ -70,10 +65,10 @@ body {
 
 .header a {
     width: 141px;
-    height: 131px;
+    height: 148px;
+    margin-top: -17px;
     display: block;
     text-align: center;
-    padding-top: 50px;
     font-size: 22px;
     text-decoration: none;
     color: #343434;
@@ -81,4 +76,54 @@ body {
 
 a:hover {
     background-color: grey;
+}
+
+.content {
+    height: 753px;
+}
+
+.welcome {
+    height: 128px;
+    margin-top: -15px;
+    margin-left: -8px;
+    background-image: linear-gradient(180deg, #333333, #494949);
+    padding-top: 2px;
+    clear: left;
+}
+
+.heading {
+    font-size: 21px;
+    color: #ffffff;
+    margin-left: 473px;
+}
+
+.descriptive {
+    width: 555px;
+    height: 71px;
+    position: absolute;
+    margin-top: -83px;
+    margin-left: 466px;
+    border-left: 8px solid #646464;
+    padding-left: 18px;
+    color: white;
+    line-height: 150%;
+}
+
+.pictureone,
+.picturetwo {
+    width: 152px;
+    height: 150px;
+    position: absolute;
+}
+
+.pictureone {
+    background-image: url("../images/shadow.png");
+    margin-left: 1130px;
+    margin-top: -130px;
+}
+
+.picturetwo {
+    background-image: url("../images/100_2.gif");
+    margin-left: 1131px;
+    margin-top: -128px;
 }
