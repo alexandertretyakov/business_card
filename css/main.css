@@ -1,99 +1,101 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    width: 1920px;
-    position: absolute;
-    background-color: white;
-    box-sizing: border-box;
+    color: #424242;
+    font: 14px Arial, Helvetica, sans-serif;
+    margin: 0;
 }
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------- Header */
 
 .header {
-    height: 148px;
-    padding-top: 1px;
-}
-
-.orange,
-.turquoise,
-.green {
-    width: 141px;
-    height: 14px;
-    float: left;
-}
-
-.orange {
-    background-color: #ff7800;
-    margin-left: 1018px;
-}
-
-.turquoise {
-    background-color: #319aa3;
-    margin: 0 3px;
-}
-
-.green {
-    background-color: #1e3436;
+    height: 150px;
 }
 
 .logo {
-    width: 373px;
-    height: 120px;
     float: left;
-    background-image: url("../images/logo.png");
-    margin-left:457px;
-    margin-top: -138px;
 }
 
-.aboat,
-.offers,
-.contact {
-    width: 141px;
-    height: 130px;
+.nav {
+    float: right;
+}
+
+.nav a {
+    border-top: 15px solid #ff7800;
+    width: 140px;
+    height: 150px;
     float: left;
-    margin-top: 3px;
-}
-
-.aboat {
-    margin-left: 1018px;
-}
-
-.offers {
-    margin-right: 3px;
-    margin-left: 3px;
-}
-
-.contact {
-}
-
-.header a {
-    width: 141px;
-    height: 148px;
-    margin-top: -17px;
-    display: block;
     text-align: center;
+    padding-top: 55px;
+    box-sizing: border-box;
+    margin-left: 3px;
+    position: relative;
     font-size: 22px;
     text-decoration: none;
     color: #343434;
 }
 
-a:hover {
-    background-color: grey;
+.nav a:hover {
+    background: #e4e4e4;
+    border-top-color: #d5d5d5 !important;
 }
+
+.nav a:nth-child(2) {
+    border-top-color: #319aa3;
+}
+
+.nav a:nth-child(3) {
+    border-top-color: #1e3436;
+}
+
+.nav a span {
+    position: absolute;
+    right: 70px;
+    bottom: -20px;
+    width: 211px;
+    height: 58px;
+    background: url('../images/tip.png');
+    box-sizing: border-box;
+    padding: 28px 10px 0;
+    display: none;
+}
+
+.nav a:hover span {
+    display: block;
+}
+
+/* -------------------------------------------- Ribbon */
+
+.ribbon {
+    color: #fff;
+    box-shadow: 0 17px 16px -6px rgba(173,62,173,1);
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #333333, #494949);
+}
+
+.ribbon h2 {
+    font-size: 21px;
+}
+
+.ribbon p {
+    border-left: 8px solid #646464;
+    padding: 10px 0 10px 18px;
+    width: 540px;
+}
+
+/* -------------------------------------------- Content */
 
 .content {
-    height: 753px;
+    overflow: hidden;
 }
 
-.welcome {
-    height: 128px;
-    margin-top: -15px;
-    margin-left: -8px;
-    background-image: linear-gradient(180deg, #333333, #494949);
-    padding-top: 2px;
-    clear: left;
-}
+/* -------------------------------------------- Footer */
 
-.heading {
-    font-size: 21px;
-    color: #ffffff;
-    margin-left: 473px;
+.footer {
+    height: 50px;
+    background: #424242;
+    color: #fff;
 }
