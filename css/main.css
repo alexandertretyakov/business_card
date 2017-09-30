@@ -4,6 +4,7 @@ body {
     width: 1920px;
     position: absolute;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .header {
@@ -95,35 +96,4 @@ a:hover {
     font-size: 21px;
     color: #ffffff;
     margin-left: 473px;
-}
-
-.descriptive {
-    width: 555px;
-    height: 71px;
-    position: absolute;
-    margin-top: -83px;
-    margin-left: 466px;
-    border-left: 8px solid #646464;
-    padding-left: 18px;
-    color: white;
-    line-height: 150%;
-}
-
-.pictureone,
-.picturetwo {
-    width: 152px;
-    height: 150px;
-    position: absolute;
-}
-
-.pictureone {
-    background-image: url("../images/shadow.png");
-    margin-left: 1130px;
-    margin-top: -130px;
-}
-
-.picturetwo {
-    background-image: url("../images/100_2.gif");
-    margin-left: 1131px;
-    margin-top: -128px;
 }
