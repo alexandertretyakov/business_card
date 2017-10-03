@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    outline: 1px dotted red;
-    overflow: hidden;
+    outline 1px dotted red;
 }
 
 body {
@@ -13,7 +12,6 @@ body {
 .page {
     width: 1000px;
     margin: 0 auto;
-    position: relative;
 }
 
 /* -------------------------------------------- Header */
@@ -43,7 +41,22 @@ body {
     font-size: 22px;
     padding-top: 53px;
     text-decoration: none;
-    color: #343434/* цвет не применился с бади ставлю тут хз*/
+    color: #343434; /* цвет не применился с бади ставлю тут хз*/
+}
+
+.nav a:hover {
+    background: #e4e4e4;
+    border-top-color: #d5d5d5 !important;
+}
+
+.nav a:hover span {
+    width: 211px;
+    height: 58px;
+    background-image: url(../images/tip.png);
+    position: absolute;
+    margin-left: -253px;
+    margin-top: 52px;
+    font-size: 15px;
 }
 
 .nav a:nth-child(1) {
@@ -60,37 +73,94 @@ body {
 
 /*-------------------------------------------- Ribbon */
 
-.ribbon {
+.ribbon { /*----color в footer----*/
     height: 130px;
     background-image: linear-gradient(180deg, #333333, #494949);
-    color: #f2f2f2;
+    position: relative;
 }
 
 h3 {
     font-size: 20px;
     font-weight: normal;
     margin-left: 18px;
+    margin-top: 0;
+    padding-top: 18px;
 }
 
-.ribbon p {
+.ribbon p { /*----margin padding line-height в контенте----*/
+    width: 560px;
     height: 69px;
     border-left: 8px solid #646464;
-    padding-left: 18px;
-    padding-top: 6px;
-    width: 560px;
-    margin-left: 18px;
-    line-height: 145%;
-    margin-top: -15px;
 }
 
-.label shadow {
+.shadow, .label {
     position: absolute;
 }
+
+.shadow {
+    right: 167px;
+    top: 0;
+}
+
+.label {
+    right: 166px;
+    top: 2px;
+}
+
+/*-------------------------------------------- content */
 
 .content {
     height: 623px;
 }
 
+.product,
+.commodity {
+    width: 490px;
+    height: 91px;
+}
+
+.product img,
+.commodity img {
+    float: right;
+    margin-right: -18px;
+}
+
+.ribbon p,
+.product p,
+.commodity p {
+    padding-left: 18px;
+    padding-top: 7px;
+    line-height: 145%;
+    margin-left: 18px;
+    margin-top: -14px;
+}
+
+.commodity {
+    margin-top: 39px;
+}
+
+.commodity p,
+.product p {
+    border-left: 8px solid #efefef;
+}
+
+/*---------------------------------------------- footer */
+
+.footer {
+    height: 49px;
+    margin-top: -13px;
+    background-color: #343434;
+}
+.ribbon,
+.footer,
+.footer a {
+    color: #f2f2f2;
+}
+
+.footer p {
+    padding-left: 472px;
+    padding-top: 9px;
+}
 
 
 
