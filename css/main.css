@@ -4,7 +4,7 @@
 }
 
 body {
-    color: #343434;
+    color: #747474;
     font: 14px Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -49,14 +49,22 @@ body {
     border-top-color: #d5d5d5 !important;
 }
 
+span {
+    display: none;/*Заставляет ищезнуть надписи тега span*/
+}
+
 .nav a:hover span {
     width: 211px;
     height: 58px;
     background-image: url(../images/tip.png);
     position: absolute;
-    margin-left: -253px;
     margin-top: 52px;
+    margin-left: -253px;
     font-size: 15px;
+    padding-top: 30px;
+    padding-right: 70px;
+    display: inline;/*Заставляет появиться span, при наведении курсора на ссылку*/
+    z-index: 2;/*Налаживает a:hover span сверху ribbon*/
 }
 
 .nav a:nth-child(1) {
@@ -73,7 +81,7 @@ body {
 
 /*-------------------------------------------- Ribbon */
 
-.ribbon { /*----color в footer----*/
+.ribbon {/*color в footer*/
     height: 130px;
     background-image: linear-gradient(180deg, #333333, #494949);
     position: relative;
@@ -87,7 +95,7 @@ h3 {
     padding-top: 18px;
 }
 
-.ribbon p { /*----margin padding line-height в контенте----*/
+.ribbon p {/*margin padding line-height в контенте*/
     width: 560px;
     height: 69px;
     border-left: 8px solid #646464;
@@ -144,13 +152,74 @@ h3 {
     border-left: 8px solid #efefef;
 }
 
-/*---------------------------------------------- footer */
+.information1,
+.information2,
+.information3 {
+    height: 203px;
+    border-left: 8px solid #efefef;
+    float: left;
+    margin-top: 39px;
+    background: no-repeat url("../images/dot.jpg");
+    background-position: left 15px top 15px;
+}
+
+.information1 {
+    width: 322px;
+    margin-left: 18px;
+    background-position: left 10px top 15px;
+}
+
+.information2 {
+    width: 327px;
+}
+
+.information3 {
+    width: 332px;
+    border-right: 8px solid #efefef;
+}
+
+.information1 h3,
+.information2 h3,
+.information3 h3 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 29px;
+    padding-left: 11px;/*Ниже (строка 199 200) перебил каскадом*/
+}
+
+.information1 p,
+.information2 p,
+.information3 p {
+    font-size: 15px;
+    line-height: 137%;
+    margin-top: -4px;
+}
+
+.information2 h3,
+.information3 h3 {
+    padding-left: 16px;
+}
+
+.information1 p {
+    padding-left: 21px;
+}
+
+.information2 p {
+    padding-left: 29px;
+}
+
+.information3 p {
+    padding-left: 26px;
+}
+
+ /*---------------------------------------------- footer */
 
 .footer {
     height: 49px;
     margin-top: -13px;
     background-color: #343434;
 }
+
 .ribbon,
 .footer,
 .footer a {
