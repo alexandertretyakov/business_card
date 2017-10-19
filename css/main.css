@@ -18,6 +18,12 @@ body {
 
 /* -------------------------------------------- Header */
 
+.header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .logo {
     float: left;
     margin: 9px 0 0 9px;
@@ -46,10 +52,6 @@ body {
 }
 
 .nav span {
-    display: none;/*Заставляет ищезнуть надписи тега span*/
-}
-
-.nav a:hover span {
     width: 211px;
     height: 58px;
     background-image: url(../images/tip.png);
@@ -59,8 +61,12 @@ body {
     font-size: 15px;
     padding-top: 30px;
     padding-right: 70px;
-    display: inline;/*Заставляет появиться span, при наведении курсора на ссылку*/
     z-index: 2;/*Налаживает a:hover span сверху ribbon*/
+    display: none;/*Заставляет ищезнуть надписи тега span*/
+}
+
+.nav a:hover span {
+    display: inline;/*Заставляет появиться span, при наведении курсора на ссылку*/
 }
 
 .nav a:nth-child(1) {
@@ -81,7 +87,6 @@ body {
     height: 130px;
     background-image: linear-gradient(180deg, #333333, #494949);
     position: relative;
-    clear: both;
     color: #f2f2f2;
     padding: 18px;
     margin-bottom: 20px;
@@ -91,7 +96,7 @@ body {
     margin-bottom: 40px;
 }
 
-h3 {
+.module--ribbon h3 {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 7px;
@@ -121,11 +126,11 @@ h3 {
 /*-------------------------------------------- Content */
 
 .content {
-    height: 623px;
     padding-left: 18px;
 }
 
 /*------------------ Module: Product */
+
 .module--product {
     width: 490px;
     margin-bottom: 25px;
@@ -140,7 +145,7 @@ h3 {
 
 /*------------------ Module: Information */
 
-.column {
+.module--information .column {
     width: 33%;
     min-height: 200px;
     border-left: 8px solid #efefef;
@@ -151,7 +156,7 @@ h3 {
     line-height: 137%;
 }
 
-.column:last-child {
+.module--information .column:last-child {
     border-right: 8px solid #efefef;
 }
 
@@ -161,7 +166,18 @@ h3 {
     padding: 0 0 10px 10px;
 }
 
+.module--information::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /*------------------- Module: Contact-us */
+
+.field {
+    font: 16px Time New Roman, serif;
+    margin-bottom: 10px;
+}
 
 input,
 textarea {
@@ -174,15 +190,6 @@ textarea {
     width: 355px;
 }
 
-.field-message label {
-    vertical-align: top;
-}
-
-.field {
-    font: 16px Time New Roman, serif;
-    margin-bottom: 10px;
-}
-
 button {
     width: 100px;
     background-color: #dddddd;
@@ -191,17 +198,17 @@ button {
 }
 
 label {
-    width: 50px;
+    width: 110px;
+    padding-right: 7px;
     text-align: right;
-    margin: 0 10px 0 50px;
     display: inline-block;
+    vertical-align: top;
 }
 
- /*---------------------------------------------- Footer */
+/*---------------------------------------------- Footer */
 
 .footer {
     height: 49px;
-    margin-top: -13px;
     background-color: #343434;
 }
 
@@ -214,6 +221,3 @@ label {
     padding-left: 472px;
     padding-top: 9px;
 }
-
-
-
