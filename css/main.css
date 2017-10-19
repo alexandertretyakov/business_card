@@ -1,12 +1,14 @@
+/* ------------------------------------------------------ Basic styles */
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline 1px dotted red;
 }
 
 body {
-    color: #747474;
+    color: #585858;
     font: 14px Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 .page {
@@ -16,19 +18,13 @@ body {
 
 /* -------------------------------------------- Header */
 
-.header {
-    height: 147px;
-}
-
 .logo {
     float: left;
-    margin-top: 9px;
-    margin-left: 9px;
+    margin: 9px 0 0 9px;
 }
 
 .nav {
     width: 432px;
-    height: 147px;
     float: right;
 }
 .nav a {
@@ -41,7 +37,7 @@ body {
     font-size: 22px;
     padding-top: 53px;
     text-decoration: none;
-    color: #343434; /* цвет не применился с бади ставлю тут хз*/
+    color: inherit;
 }
 
 .nav a:hover {
@@ -49,7 +45,7 @@ body {
     border-top-color: #d5d5d5 !important;
 }
 
-span {
+.nav span {
     display: none;/*Заставляет ищезнуть надписи тега span*/
 }
 
@@ -79,26 +75,33 @@ span {
     border-top-color: #1e3436;
 }
 
-/*-------------------------------------------- Ribbon */
+/*------------------------- Module: Ribbon */
 
-.ribbon {/*color в footer*/
+.module--ribbon {
     height: 130px;
     background-image: linear-gradient(180deg, #333333, #494949);
     position: relative;
+    clear: both;
+    color: #f2f2f2;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.page--offers .module--ribbon {
+    margin-bottom: 40px;
 }
 
 h3 {
     font-size: 20px;
     font-weight: normal;
-    margin-left: 18px;
-    margin-top: 0;
-    padding-top: 18px;
+    margin-bottom: 7px;
 }
 
-.ribbon p {/*margin padding line-height в контенте*/
+.module--ribbon p {
     width: 560px;
-    height: 69px;
     border-left: 8px solid #646464;
+    padding: 5px 0 5px 18px;
+    line-height: 145%;
 }
 
 .shadow, .label {
@@ -115,104 +118,86 @@ h3 {
     top: 2px;
 }
 
-/*-------------------------------------------- content */
+/*-------------------------------------------- Content */
 
 .content {
     height: 623px;
-}
-
-.product,
-.commodity {
-    width: 490px;
-    height: 91px;
-}
-
-.product img,
-.commodity img {
-    float: right;
-    margin-right: -18px;
-}
-
-.ribbon p,
-.product p,
-.commodity p {
     padding-left: 18px;
-    padding-top: 7px;
-    line-height: 145%;
-    margin-left: 18px;
-    margin-top: -14px;
 }
 
-.commodity {
-    margin-top: 39px;
-}
-
-.commodity p,
-.product p {
+/*------------------ Module: Product */
+.module--product {
+    width: 490px;
+    margin-bottom: 25px;
+    padding: 5px 0 5px 18px;
     border-left: 8px solid #efefef;
+    line-height: 145%;
 }
 
-.information1,
-.information2,
-.information3 {
-    height: 203px;
+.module--product img {
+    float: right;
+}
+
+/*------------------ Module: Information */
+
+.column {
+    width: 33%;
+    min-height: 200px;
     border-left: 8px solid #efefef;
     float: left;
-    margin-top: 39px;
-    background: no-repeat url("../images/dot.jpg");
-    background-position: left 15px top 15px;
+    background: url("../images/dot.jpg") no-repeat left 15px top 15px;
+    padding: 27px 10px 10px 25px;
+    font-size: 15px;
+    line-height: 137%;
 }
 
-.information1 {
-    width: 322px;
-    margin-left: 18px;
-    background-position: left 10px top 15px;
-}
-
-.information2 {
-    width: 327px;
-}
-
-.information3 {
-    width: 332px;
+.column:last-child {
     border-right: 8px solid #efefef;
 }
 
-.information1 h3,
-.information2 h3,
-.information3 h3 {
+.module--information h3 {
     font-size: 18px;
     font-weight: normal;
-    padding-top: 29px;
-    padding-left: 11px;/*Ниже (строка 199 200) перебил каскадом*/
+    padding: 0 0 10px 10px;
 }
 
-.information1 p,
-.information2 p,
-.information3 p {
-    font-size: 15px;
-    line-height: 137%;
-    margin-top: -4px;
+/*------------------- Module: Contact-us */
+
+input,
+textarea {
+    width: 302px ;
+    border: 1px solid #d6d6d6;
+    padding: 2px;
 }
 
-.information2 h3,
-.information3 h3 {
-    padding-left: 16px;
+textarea {
+    width: 355px;
 }
 
-.information1 p {
-    padding-left: 21px;
+.field-message label {
+    vertical-align: top;
 }
 
-.information2 p {
-    padding-left: 29px;
+.field {
+    font: 16px Time New Roman, serif;
+    margin-bottom: 10px;
 }
 
-.information3 p {
-    padding-left: 26px;
+button {
+    width: 100px;
+    background-color: #dddddd;
+    border-color: #cccc99;
+    margin-left: 114px;
 }
 
- /*---------------------------------------------- footer */
+label {
+    width: 50px;
+    text-align: right;
+    margin: 0 10px 0 50px;
+    display: inline-block;
+}
+
+ /*---------------------------------------------- Footer */
 
 .footer {
     height: 49px;
@@ -220,7 +205,6 @@ h3 {
     background-color: #343434;
 }
 
-.ribbon,
 .footer,
 .footer a {
     color: #f2f2f2;
