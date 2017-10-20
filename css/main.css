@@ -7,13 +7,19 @@
 }
 
 body {
-    color: #000000;
+    color: #585858;
     font: 14px Arial, Helvetica, sans-serif;
 }
 
 .page {
     width: 1000px;
     margin: 0 auto;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 7px;
 }
 
 /* -------------------------------------------- Header */
@@ -39,7 +45,7 @@ body {
     float: left;
     text-align: center;
     border-top: solid 14px;
-    margin: 0 1.5px 0 1.5px;
+    margin: 0 1px 0 1px;
     font-size: 22px;
     padding-top: 53px;
     text-decoration: none;
@@ -96,12 +102,6 @@ body {
     margin-bottom: 40px;
 }
 
-h3 {
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 7px;
-}
-
 .module--ribbon p {
     width: 560px;
     border-left: 8px solid #646464;
@@ -109,18 +109,12 @@ h3 {
     line-height: 145%;
 }
 
-.shadow, .label {
+.module--ribbon .label {
     position: absolute;
-}
-
-.shadow {
-    right: 167px;
-    top: 0;
-}
-
-.label {
     right: 166px;
     top: 2px;
+    background: url("../images/shadow.png") no-repeat 0 0;
+    padding: 2px 0 0 1px;
 }
 
 /*-------------------------------------------- Content */
@@ -184,11 +178,12 @@ textarea {
     width: 302px ;
     border: 1px solid #d6d6d6;
     padding: 2px;
+    font-family: Time New Roman, serif;
 }
 
 textarea {
     width: 355px;
-    font: 16px Time New Roman, serif;
+    resize: none;
 }
 
 button {
@@ -204,6 +199,7 @@ label {
     text-align: right;
     display: inline-block;
     vertical-align: top;
+    color: #000;
 }
 
 /*---------------------------------------------- Footer */
@@ -218,7 +214,7 @@ label {
     text-align: center;
 }
 
-.footer p,
+.footer,
 .footer a {
     color: #f2f2f2;
 }
