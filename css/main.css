@@ -6,14 +6,19 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     color: #585858;
     font: 14px Arial, Helvetica, sans-serif;
 }
 
 .page {
-    width: 1000px;
-    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
 }
 
 h3 {
@@ -22,6 +27,10 @@ h3 {
     margin-bottom: 7px;
 }
 
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+}
 /* -------------------------------------------- Header */
 
 .header::after {
@@ -89,9 +98,12 @@ h3 {
 
 /*------------------------- Module: Ribbon */
 
+.ribbon {
+    background: linear-gradient(180deg, #333333, #494949);
+}
+
 .module--ribbon {
     height: 130px;
-    background: linear-gradient(180deg, #333333, #494949);
     position: relative;
     color: #f2f2f2;
     padding: 18px;
