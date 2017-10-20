@@ -19,7 +19,7 @@ body {
 .page {
     position: relative;
     min-height: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 h3 {
@@ -63,7 +63,7 @@ h3 {
 }
 
 .nav a:hover {
-    background: #e4e4e4;
+    background-image: linear-gradient(180deg, #ffffff, #d9d9d9);
     border-top-color: #d5d5d5 !important;
 }
 
@@ -101,6 +101,7 @@ h3 {
 
 .ribbon {
     background: linear-gradient(180deg, #333333, #494949);
+    box-shadow:  0 10px 31px 0 #c6c6c6;
 }
 
 .module--ribbon {
