@@ -200,6 +200,11 @@ textarea {
     font-family: Time New Roman, serif;
 }
 
+.field.error input,
+.field.error textarea {
+    border: 1px solid #f00;
+}
+
 textarea {
     width: 355px;
     resize: none;

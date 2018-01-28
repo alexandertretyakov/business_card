@@ -1,29 +1,17 @@
 window.addEventListener('load', function() {
-    var button = document.querySelector('.actions button');
-    var input = document.querySelectorAll('input');
-    var textarea = document.querySelector('textarea');
+    var sendButton = document.querySelector('.module--contact-us .actions button');
 
-    button.addEventListener('click', function () {
-        if (input[0].innerText === '') {
-            input[0].style.border = '1px solid red';
-        }
-    });
+    sendButton.addEventListener('click', function () {
+        var controls = document.querySelectorAll('input, textarea');
 
-    button.addEventListener('click', function () {
-        if (input[1].innerText === '') {
-            input[1].style.border = '1px solid red';
-        }
-    });
-
-    button.addEventListener('click', function () {
-        if (input[2].innerText === '') {
-            input[2].style.border = '1px solid red';
-        }
-    });
-
-    button.addEventListener('click', function () {
-        if (textarea.innerText === '') {
-            textarea.style.border = '1px solid red';
+        var i = 0;
+        while (i < controls.length) {
+            if (controls[i].value === '') {
+                controls[i].parentNode.classList.add('error');
+            } else {
+                controls[i].parentNode.classList.remove('error');
+            }
+            i = i + 1;
         }
     });
 });
